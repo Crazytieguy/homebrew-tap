@@ -1,25 +1,25 @@
 class LiveTrans < Formula
   desc "Real-time translation of Spotify song lyrics"
   homepage "https://github.com/Crazytieguy/live-trans"
-  version "0.1.6"
+  version "0.1.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/live-trans/releases/download/v0.1.6/live-trans-aarch64-apple-darwin.tar.xz"
-      sha256 "61512a1cfd8a82229ee9dbec71280dd53bbfe57dd349b49ad4dd14165900731d"
+      url "https://github.com/Crazytieguy/live-trans/releases/download/v0.1.7/live-trans-aarch64-apple-darwin.tar.xz"
+      sha256 "b50879f8eaf96577ac0b23007e161590fa7930dedb3863c7b9f6fdd21bde3e06"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/live-trans/releases/download/v0.1.6/live-trans-x86_64-apple-darwin.tar.xz"
-      sha256 "79da3ee0caef4493118302c398aec82feae1aaae3afd958e9630d11bbbe76da3"
+      url "https://github.com/Crazytieguy/live-trans/releases/download/v0.1.7/live-trans-x86_64-apple-darwin.tar.xz"
+      sha256 "a782cd49706cee2ddbeb9984b2bbd58f3505b78d9d75212d8270a838eaf01941"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/live-trans/releases/download/v0.1.6/live-trans-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "82554aa1bcdf9640de7b5eecb839a5d0568b300e35e9b9abe7d3f905b4ecb515"
+      url "https://github.com/Crazytieguy/live-trans/releases/download/v0.1.7/live-trans-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d4646c202446effdd74996bdc19a6783501beb6480703d351cc44efbcfd39151"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/live-trans/releases/download/v0.1.6/live-trans-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e05a8ec0b28e28f0fe41f30f4375a19ccecf2d89afa3289dc3fdb48a69b36dbb"
+      url "https://github.com/Crazytieguy/live-trans/releases/download/v0.1.7/live-trans-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ab0c77ca091558eb3b4b99343d0a8c04954a9a7653000f45da1e4bcb763278c3"
     end
   end
   license "MIT"
