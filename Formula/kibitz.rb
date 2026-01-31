@@ -1,25 +1,25 @@
 class Kibitz < Formula
   desc "A terminal UI for kibitzing on your coding agent's changes"
   homepage "https://github.com/Crazytieguy/kibitz"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/kibitz/releases/download/v0.1.0/kibitz-aarch64-apple-darwin.tar.xz"
-      sha256 "1c20501c19ea51bc3d8d39354e935502177b8c716f17e969b9da3e6531dcccb8"
+      url "https://github.com/Crazytieguy/kibitz/releases/download/v0.1.1/kibitz-aarch64-apple-darwin.tar.xz"
+      sha256 "cba2e28e88c2082e3defe753cb265f53d85f1cf0f53ad06606c2bae4c4dc7dc8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/kibitz/releases/download/v0.1.0/kibitz-x86_64-apple-darwin.tar.xz"
-      sha256 "9dd59c7677a35e2c4aafb8bb2e018563fcb94fca2b66d2a9980b21abb1ecf475"
+      url "https://github.com/Crazytieguy/kibitz/releases/download/v0.1.1/kibitz-x86_64-apple-darwin.tar.xz"
+      sha256 "c21bd73fc5184b322d434ea9bbce104eea706b93130dbb40c4e4292b2f95df59"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/kibitz/releases/download/v0.1.0/kibitz-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fde4c9be0cca616033e3a8fca44f3c1bbfcfab9dfe83a5caf6ac4e91bf891a5e"
+      url "https://github.com/Crazytieguy/kibitz/releases/download/v0.1.1/kibitz-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "276f0ef3ca984ca61f760e980be7a323dcd10cbfc3e2f1eea7bccbe45f7cb30b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/kibitz/releases/download/v0.1.0/kibitz-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a283a240d0b6f51383aa1122a4c3d2f40d47a5b6059cc44a0c69e01096cb9ad7"
+      url "https://github.com/Crazytieguy/kibitz/releases/download/v0.1.1/kibitz-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "be220523c24e3940ade55e91398c978093280c0bb1146b6403b33eb684766016"
     end
   end
   license "MIT"
@@ -28,7 +28,6 @@ class Kibitz < Formula
     "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
-    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
