@@ -1,25 +1,25 @@
 class Coven < Formula
   desc "A minimal streaming display and workflow runner for Claude Code's -p mode"
   homepage "https://github.com/Crazytieguy/coven"
-  version "0.1.4"
+  version "0.1.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/coven/releases/download/v0.1.4/coven-aarch64-apple-darwin.tar.xz"
-      sha256 "057c33bdfa387c0f89ae55b60a33991a59f2d521ecfc1eabd5027dd23e620b1c"
+      url "https://github.com/Crazytieguy/coven/releases/download/v0.1.5/coven-aarch64-apple-darwin.tar.xz"
+      sha256 "01d5222e7afde1f49d61b51df85ca4a4d5c488ae1e6f6bfa5e67d2f361982fe1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/coven/releases/download/v0.1.4/coven-x86_64-apple-darwin.tar.xz"
-      sha256 "a9a6957662e6525c8bf8e89b5e1083597a7c19610a5c02b9a5d58372cfe90031"
+      url "https://github.com/Crazytieguy/coven/releases/download/v0.1.5/coven-x86_64-apple-darwin.tar.xz"
+      sha256 "8bac0c433014b51135f0e39f020df18def38260a04c6748b83e6f4418d2353d3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/coven/releases/download/v0.1.4/coven-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "364c000bc18e31b201f3decf319c157d1e7fe3976e1998f2bae83370856177e2"
+      url "https://github.com/Crazytieguy/coven/releases/download/v0.1.5/coven-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "85b6b6c746c49165c1115013cc0187c3a12648ad59bcb859711e6814f1c7bd79"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/coven/releases/download/v0.1.4/coven-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bf80ddeb3961880146c89d2e61cf000a2ddf3483c051b512137dbcfcfd83b89b"
+      url "https://github.com/Crazytieguy/coven/releases/download/v0.1.5/coven-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1a693c4bfb5b481206ebedca10fdcedbe21167f4347db3d3c6029f07d9899981"
     end
   end
   license "MIT"
