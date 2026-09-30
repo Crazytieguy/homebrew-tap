@@ -1,25 +1,25 @@
 class Precis < Formula
   desc "A CLI tool that extracts a token-efficient summary of a path"
   homepage "https://github.com/Crazytieguy/precis"
-  version "0.1.8"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/precis/releases/download/v0.1.8/precis-aarch64-apple-darwin.tar.xz"
-      sha256 "b6843c1d992d630fc16c62b1d31401a69bf97b515349cb9163c9bd0841e94207"
+      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.0/precis-aarch64-apple-darwin.tar.xz"
+      sha256 "106692562b96333433f3e1f51d22a1ccf42aab10f24da32d8368da2929dc3a9f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/precis/releases/download/v0.1.8/precis-x86_64-apple-darwin.tar.xz"
-      sha256 "444bc7a40ced8d75b4c3bea2bd293adc0bc9baaf63e94a5996cbd69b75645f13"
+      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.0/precis-x86_64-apple-darwin.tar.xz"
+      sha256 "c1fe90969d00dcdd5939e73f877771e5478fb87a3ffd6d6ec78e025635d936cc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/precis/releases/download/v0.1.8/precis-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4f69a572e4401edd740075ad28889731762ade1dbf99b24903087c440669e6a2"
+      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.0/precis-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e55bb62bbed9ab2081e04f131da3b208a1367e2b83e6edd058302e16c30149b1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/precis/releases/download/v0.1.8/precis-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4c960eb84a615f1ca72d40c1be3a7572be9c497ddffb5f4ff4c54f7a1b564535"
+      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.0/precis-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a0fd9f4e5a5f2ebe3264baec3662d6ca4661c0f663d46094cc4688317db7943d"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class Precis < Formula
   end
 
   def install
-    bin.install "precis" if OS.mac? && Hardware::CPU.arm?
-    bin.install "precis" if OS.mac? && Hardware::CPU.intel?
-    bin.install "precis" if OS.linux? && Hardware::CPU.arm?
-    bin.install "precis" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "precis"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "precis"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "precis"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "precis"
+    end
 
     install_binary_aliases!
 
