@@ -1,25 +1,25 @@
 class Precis < Formula
   desc "A CLI tool that extracts a token-efficient summary of a path"
   homepage "https://github.com/Crazytieguy/precis"
-  version "0.2.2"
+  version "0.2.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.2/precis-aarch64-apple-darwin.tar.xz"
-      sha256 "19b66e5345d0cd03aef32cf8626e757937e8b17e9439b56267ac77ceda963965"
+      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.3/precis-aarch64-apple-darwin.tar.xz"
+      sha256 "69421a46185798ea80d13eec1f9fbf2644f5911ef80f184c6fdf3419e22f988a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.2/precis-x86_64-apple-darwin.tar.xz"
-      sha256 "ea1898d7d9b00ba2e7fbf6b9101bea0897576eec03996f21b7c1cf447b82ad8e"
+      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.3/precis-x86_64-apple-darwin.tar.xz"
+      sha256 "48726bc7ba2332538183a201c50d39791506fc9eb8d2ec230bb3a6e41d4c60a2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.2/precis-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2b8c7b3a00dbd6ce74a8ea0378f3c4708f2f1f28f405f9f36ff1157fb4952283"
+      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.3/precis-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "90a8586e25152945f3628224749c98ccfe7048ba1066c068af0c8e5f87d50559"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.2/precis-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "770a5c4b74b5408e201f49865d283e31589de3537c96532b24ff19b7ac76920a"
+      url "https://github.com/Crazytieguy/precis/releases/download/v0.2.3/precis-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f2da8a607f669e84fdf4d8572893e27d969565025df018731c28cbbe5254750a"
     end
   end
   license "MIT"
